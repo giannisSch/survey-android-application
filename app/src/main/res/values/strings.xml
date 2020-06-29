@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Survey</string>
+
+    <string name="question1">How satisfied are you with our costumer support\'s performance?</string>
+    <string name="asnwer1">Willingness to serve</string>
+    <string name="asnwer2">Courtesy of staff</string>
+    <string name="asnwer3">Speed of service</string>
+    <string name="asnwer4">Store Image</string>
+
+    <string name="thank_you">Done, Thank you</string>
+
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".SecondQuestionFragment">
+
+
+
+        <ImageButton
+            android:id="@+id/reactionImageButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:transitionName="reactionImageButton"
+            android:backgroundTint="@color/colorBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/questionTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            tools:text="Τι ήταν αυτό που σας ικανοποίησε ιδιαιτέρως"
+            android:gravity="center"
+            android:padding="7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reactionImageButton"/>
+
+        <CheckBox
+            android:id="@+id/asnwer1CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:checked="false"
+            android:text="@string/asnwer1"
+            android:padding="5dp"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/questionTextField"
+            app:layout_constraintBottom_toTopOf="@id/asnwer2CheckBox"
+            app:buttonTint="@color/colorPrimary"/>
+
+        <CheckBox
+            android:id="@+id/asnwer2CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:checked="false"
+            android:text="@string/asnwer2"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/asnwer1CheckBox"
+            app:layout_constraintBottom_toTopOf="@id/asnwer3CheckBox"
+            app:buttonTint="@color/colorPrimary"/>
+
+        <CheckBox
+            android:id="@+id/asnwer3CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:checked="false"
+            android:text="@string/asnwer1"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/asnwer2CheckBox"
+            app:layout_constraintBottom_toTopOf="@id/asnwer4CheckBox"
+            app:buttonTint="@color/colorPrimary"/>
+
+        <CheckBox
+            android:id="@+id/asnwer4CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:checked="false"
+            android:text="@string/asnwer1"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/asnwer3CheckBox"
+            app:layout_constraintBottom_toTopOf="@id/finishButton"
+            app:buttonTint="@color/colorPrimary"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/finishButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FINISH"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorBackground"
+            android:background="@color/colorBackground"
+            style="?attr/materialButtonOutlinedStyle"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

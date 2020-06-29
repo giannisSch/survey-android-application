@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirstQuestionFragment">
+
+
+    <TextView
+        android:id="@+id/questionTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="@string/question1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/veryHappyImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/colorBackground"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/happyImageButton"
+        app:layout_constraintTop_toBottomOf="@id/questionTextField"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/happyImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/notHappyImageButton"
+        app:layout_constraintStart_toEndOf="@+id/veryHappyImageButton"
+        app:layout_constraintTop_toBottomOf="@id/questionTextField" />
+
+    <ImageButton
+        android:id="@+id/notHappyImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/badImageButton"
+        app:layout_constraintStart_toEndOf="@+id/happyImageButton"
+        app:layout_constraintTop_toBottomOf="@id/questionTextField" />
+
+    <ImageButton
+        android:id="@+id/badImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/notHappyImageButton"
+        app:layout_constraintTop_toBottomOf="@id/questionTextField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Satisfied"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@id/veryHappyImageButton"
+        app:layout_constraintEnd_toEndOf="@id/veryHappyImageButton"
+        app:layout_constraintStart_toStartOf="@id/veryHappyImageButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Happy"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@id/happyImageButton"
+        app:layout_constraintEnd_toEndOf="@id/happyImageButton"
+        app:layout_constraintStart_toStartOf="@id/happyImageButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sad"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@id/notHappyImageButton"
+        app:layout_constraintEnd_toEndOf="@id/notHappyImageButton"
+        app:layout_constraintStart_toStartOf="@id/notHappyImageButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="UnHappy"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@id/badImageButton"
+        app:layout_constraintEnd_toEndOf="@id/badImageButton"
+        app:layout_constraintStart_toStartOf="@id/badImageButton"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
